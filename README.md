@@ -11,7 +11,7 @@ CUDA_VISIBLE_DEVICES="5,6" python -m torch.distributed.launch --nproc_per_node 2
 * For segmentation task, ddp is not added. `--local_rank` is used to set device number
 ```
 python main_seg.py --backbone vit_base --pretrain_mode vit_seg_selfpatch --pretrain_weight /sda1/zhouziyu/ssl/NIHChestX-ray14_pretrain/checkpoints/SelfPatch_vit-b32_448/checkpoint0300.pth --local_rank 6 --dataset SIIM
-
+```
 
 ## Testing
 
